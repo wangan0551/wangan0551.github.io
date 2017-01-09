@@ -1,4 +1,4 @@
-$(document).ready(function(){
+ï»¿$(document).ready(function(){
   UpdJumbotron();
   JSQ();
 });
@@ -7,17 +7,17 @@ function JSQ(){
    $('#tools button').click(function(){
 	   var gs = $('#jsqText').val();
 	   if (gs.length <= 0){
-		   alert('ÇëÊäÈë¼ÆËã¹«Ê½£¡');
+		   alert('è¯·è¾“å…¥è®¡ç®—å…¬å¼ï¼');
 	   }else{
 		   var Xseach = /[^0-9,+,-,*,\/,(,),\.,%]/g.exec(gs);
 		   if ( Xseach!=null)
 			{
-				alert("ÊäÈëµÄ¹«Ê½ÓĞÎó:"+Xseach);
+				alert("è¾“å…¥çš„å…¬å¼æœ‰è¯¯:"+Xseach);
 			}else {
 				try{
 					var res = eval(gs);
 				}catch(err){
-					alert("ÊäÈëµÄ¹«Ê½ÓĞÎó£¬Çë¼ì²é£¡\n"+err.message);
+					alert("è¾“å…¥çš„å…¬å¼æœ‰è¯¯ï¼Œè¯·æ£€æŸ¥ï¼\n"+err.message);
 				}
 				alert(res);
 				$('#result').text("result = "+res.toString());
@@ -30,9 +30,14 @@ function JSQ(){
 }
 function UpdJumbotron(){
 	$('.jumbotron').empty();
-	$('.jumbotron').prepend("<h1>wdw</h1>");// ±êÌâ
-	$('.jumbotron').append("<p>this is JQuery done!</p>"); //¼ò½é
-	$('.jumbotron').append("<a class='btn btn-primary btn-large' href='test/MyForm.html'>Learn more</a>");//ÏêÏ¸ĞÅÏ¢°´Å¥¡£
+	$('.jumbotron').append("<a class='btn btn-primary btn-large' href='html/ljsw2016.html'>View details</a>");//è¯¦ç»†ä¿¡æ¯æŒ‰é’®ã€‚
+	
+	var ljswFile = "json/ljsw.json";
+	$.getJSON(ljswFile,function(data){
+		//dataä¸­æ–‡ä¹±ç çš„è§£å†³æ–¹æ¡ˆï¼Œç”¨è®°äº‹æœ¬æ‰“å¼€ï¼Œå¦å­˜ä¸ºï¼Œé€‰æ‹©utf-8
+		$('.jumbotron').children('h1').text(data.name);
+		$('.jumbotron p').text(data.title);
+	});
 }
 
 function UpdTechnology(){

@@ -1,12 +1,11 @@
-
-document.writeln('<link href="//cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">');
+ï»¿document.writeln('<link href="//cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">');
 document.writeln('<script src="https//apps/bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>')
 document.writeln('<script src="//cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>')
-/*	<!-- ÐÂ Bootstrap ºËÐÄ CSS ÎÄ¼þ -->	
+/*	<!-- æ–° Bootstrap æ ¸å¿ƒ CSS æ–‡ä»¶ -->	
 	<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<!-- jQueryÎÄ¼þ¡£Îñ±ØÔÚbootstrap.min.js Ö®Ç°ÒýÈë -->
+	<!-- jQueryæ–‡ä»¶ã€‚åŠ¡å¿…åœ¨bootstrap.min.js ä¹‹å‰å¼•å…¥ -->
 	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
  
-	<!-- ×îÐÂµÄ Bootstrap ºËÐÄ JavaScript ÎÄ¼þ -->
+	<!-- æœ€æ–°çš„ Bootstrap æ ¸å¿ƒ JavaScript æ–‡ä»¶ -->
 	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 */
