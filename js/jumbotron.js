@@ -29,9 +29,7 @@ function JSQ(){
 
 }
 function UpdJumbotron(){
-	$('.jumbotron').empty();
-	$('.jumbotron').append("<a class='btn btn-primary btn-large' href='html/ljsw2016.html'>View details</a>");//详细信息按钮。
-	
+
 	var ljswFile = "json/ljsw.json";
 	$.getJSON(ljswFile,function(data){
 		//data中文乱码的解决方案，用记事本打开，另存为，选择utf-8
