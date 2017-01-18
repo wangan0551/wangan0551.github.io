@@ -9,7 +9,7 @@ function JSQ(){
 	   if (gs.length <= 0){
 		   alert('请输入计算公式！');
 	   }else{
-		   var Xseach = /[^0-9,+,-,*,\/,(,),\.,%]/g.exec(gs);
+		   var Xseach = /[^0-9,+,\-,*,\/,(,),\.,%]/g.exec(gs);
 		   if ( Xseach!=null)
 			{
 				alert("输入的公式有误:"+Xseach);
